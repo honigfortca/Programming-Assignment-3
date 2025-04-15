@@ -14,3 +14,6 @@ Steps for reproducing my [Christine Honigfort's] results:
             make
             sudo make install
    7. Use the command mv to move mahimahi into pantheon/src/wrappers.
+   8. Use "sudo pip2 install numpy==1.15.0" to install numpy from the root folder (to navigate to the root type "su" and then enter your password).
+   9. Use "sudo apt-get install python-matplotlib" to install matplotlib from the root.
+   10. 
