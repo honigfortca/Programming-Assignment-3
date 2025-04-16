@@ -13,7 +13,10 @@ Steps for reproducing my [Christine Honigfort's] results:
            ./configure
             make
             sudo make install
-   7. Use the command mv to move mahimahi into pantheon/src/wrappers.
-   8. Use "sudo pip2 install numpy==1.15.0" to install numpy from the root folder (to navigate to the root type "su" and then enter your password).
-   9. Use "sudo apt-get install python-matplotlib" to install matplotlib from the root.
-   10. 
+8. Use the command mv to move mahimahi into pantheon/src/wrappers.
+9. Use "sudo pip2 install numpy==1.15.0" to install numpy from the root folder (to navigate to the root type "su" and then enter your password).
+10. Use "sudo apt-get install python-matplotlib" to install matplotlib from the root.
+11. Create the file christine_trace.py (seen in this github).
+12. Use the linux command "python christine_trace.py>christine_trace.trace" to create the trace file from the python file.
+14. Use the linux command "".
+ 
