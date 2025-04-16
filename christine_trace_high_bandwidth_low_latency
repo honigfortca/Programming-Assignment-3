@@ -1,0 +1,14 @@
+import sys
+
+bandwidth = 48
+length = 60
+
+if int(bandwidth)>12:
+        totalInts = int(bandwidth/12)
+
+        for i in range(length*1000):
+                for x in range(totalInts):
+                        print(i)
+else:
+        for i in range(0, length*1000, int(bandwidth)):
+                print(i)
