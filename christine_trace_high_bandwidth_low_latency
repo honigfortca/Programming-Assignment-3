@@ -1,7 +1,7 @@
 #This imports the sys module.
 import sys
 
-#This sets the rate to 48 since 48 is the closest number to 50 (Since 50 Mbp was recommended for the ow-latency, high-bandwidth environmen) that is divisible by 12.
+#This sets the rate to 48 since 48 is the closest number to 50 (Since 50 Mbp was recommended for the low-latency, high-bandwidth environment) that is divisible by 12.
 bandwidth = 48
 
 #We were instructed that each experiment should run traffic for at least 60 seconds.
