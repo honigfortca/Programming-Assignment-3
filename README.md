@@ -20,8 +20,10 @@ Steps for reproducing my [Christine Honigfort's] results:
 12. Create the file christine_trace_high_bandwidth_low_latency.py (the code for this file can be found in this github).
 13. Use the linux command "python christine_trace_high_bandwidth_low_latency.py>christine_trace_high_bandwidth_low_latency.trace" to create the trace file from the python file.
 14. Use the linux command "src/experiments/test.py local --runtime 60 --schemes "copa cubic sprout"  --uplink-trace src/experiments/christine_trace_high_bandwidth_low_latency.trace --downlink-trace src/experiments/christine_trace_high_bandwidth_low_latency.trace --append-mm-cmds "mm-delay 10"".
-15. Create the file christine_trace_low_bandwidth_high_latency.py (the code for this file can be found in this github).
-16. Use the linux command "python christine_trace_low_bandwidth_high_latency.py>christine_trace_low_bandwidth_high_latency.trace" to create the trace file from the python file.
-17. Use the linux command "src/experiments/test.py local --runtime 60 --schemes "copa cubic sprout"  --uplink-trace src/experiments/christine_trace_low_bandwidth_high_latency.trace --downlink-trace src/experiments/christine_trace_low_bandwidth_high_latency.trace --append-mm-cmds "mm-delay 100"".
-18. View and analyze the generated reports.
+15. Run "src/analysis/analyze.py" to create the graphs in the report. 
+16. Create the file christine_trace_low_bandwidth_high_latency.py (the code for this file can be found in this github).
+17. Use the linux command "python christine_trace_low_bandwidth_high_latency.py>christine_trace_low_bandwidth_high_latency.trace" to create the trace file from the python file.
+18. Use the linux command "src/experiments/test.py local --runtime 60 --schemes "copa cubic sprout"  --uplink-trace src/experiments/christine_trace_low_bandwidth_high_latency.trace --downlink-trace src/experiments/christine_trace_low_bandwidth_high_latency.trace --append-mm-cmds "mm-delay 100"".
+19. Run "src/analysis/analyze.py" to create the graphs in the report. 
+20. View and analyze the generated reports.
  
