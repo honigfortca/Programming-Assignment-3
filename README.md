@@ -14,7 +14,7 @@ Steps for reproducing my [Christine Honigfort's] results:
             make
             sudo make install
 8. Use the command mv to move mahimahi into pantheon/src/wrappers.
-9. Download the following schemes: Copa, TCP Cubic, and Sprout.
+9. Download the following schemes: Copa, TCP Cubic, and Sprout using the command "Src/experiments/setup.py --install-deps --schemes "copa cubic sprout" and then the command "Src/experiments/setup.py --setup --schemes "copa cubic sprout".
 10. Use "sudo pip2 install numpy==1.15.0" to install numpy from the root folder (to navigate to the root type "su" and then enter your password).
 11. Use "sudo apt-get install python-matplotlib" to install matplotlib from the root.
 12. Create the file christine_trace_high_bandwidth_low_latency.py (the code for this file can be found in this github).
